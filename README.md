@@ -1,1 +1,272 @@
 # 3230794-web1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Karak Castle Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f0f8ff, #cce7ff);
+      margin: 0; padding: 0;
+      color: #222;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    nav {
+      background-color: #0066cc;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 10px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #aaa;
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.5em;
+      color: #333;
+    }
+    .highlight {
+      color: #b03060;
+      font-weight: bold;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #004080;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #004080;
+      color: white;
+    }
+    audio, video {
+      display: block;
+      margin: 15px auto;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      margin-top: 30px;
+      font-size: 0.9em;
+    }
+    fieldset {
+      border: 2px solid #004080;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 8px;
+      background: #e6f0ff;
+    }
+    legend {
+      font-weight: bold;
+      color: #003366;
+    }
+    label {
+      display: block;
+      margin: 8px 0 3px;
+      font-weight: bold;
+      color: #004080;
+    }
+    input[type="text"], input[type="email"], textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border-radius: 5px;
+      border: 1px solid #004080;
+    }
+    button {
+      background-color: #004080;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #003366;
+    }
+    /* Colored text examples */
+    .red { color: #d32f2f; }
+    .green { color: #388e3c; }
+    .blue { color: #1976d2; }
+    .orange { color: #f57c00; }
+    .purple { color: #7b1fa2; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Karak Castle - Historical Fortress in Jordan</h1>
+  <p class="highlight">Created by Raneem Mohammad Mobideen (3230794)</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#media">Media</a>
+  <a href="#data">Data Table</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+  <section id="about">
+    <h2 class="blue">About Karak Castle</h2>
+    <p>Karak Castle, also known as <span class="purple">Kerak</span>, is a large Crusader castle located in the city of Karak in Jordan. It is one of the largest and most well-preserved castles in the region.</p>
+    <p>The castle was built in the 12th century and played a key role during the Crusades. It sits strategically on a hill overlooking the Dead Sea and the surrounding area, providing excellent defense and control.</p>
+    <p>The architecture of Karak Castle reflects a blend of Crusader and Islamic styles, making it a unique historical site.</p>
+    <img src="images/karak_castle2.jpg" alt="Karak Castle View" />
+  </section>
+
+  <section id="gallery">
+    <h2 class="green">Image Gallery</h2>
+    <p>Here are some beautiful views of Karak Castle:</p>
+    <table>
+      <thead>
+        <tr><th>Image</th><th>Description</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="images/karak_castle1.jpg" alt="Karak Castle Walls" style="max-width:250px;"></td>
+          <td>The impressive walls and towers of Karak Castle.</td>
+        </tr>
+        <tr>
+          <td><img src="images/karak_castle4.jpg" alt="Castle Interior" style="max-width:250px;"></td>
+          <td>The interior courtyards and stone pathways.</td>
+        </tr>
+        <tr>
+          <td><img src="images/karak_castle3.jpg" alt="Castle View at Sunset" style="max-width:250px;"></td>
+          <td>Karak Castle in the past.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="media">
+    <h2 class="orange">Media Section</h2>
+    <p>Listen to traditional Jordanian music and watch a video about Karak Castle:</p>
+    <audio controls>
+      <source src="audio/karak intarnatinal sound.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <video controls width="100%" height="auto">
+      <source src="video/karak castle.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section id="data">
+    <h2 class="red">Castle Facts</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Fact</th>
+          <th>Detail</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Location</td><td>Karak, Jordan</td></tr>
+        <tr><td>Built</td><td>12th Century</td></tr>
+        <tr><td>Style</td><td>Crusader and Islamic architecture</td></tr>
+        <tr><td>Size</td><td>Over 9000 square meters</td></tr>
+        <tr><td>Historical Importance</td><td>Major Crusader fortress and defense site</td></tr>
+      </tbody>
+    </table>
+  </section>
+<section id="about">
+  <h2 class="blue">About Karak Castle</h2>
+  <p>Karak Castle, also known as <span class="purple">Kerak</span>, is a large Crusader castle located in the city of Karak in Jordan. It is one of the largest and most well-preserved castles in the region.</p>
+  <p>The castle was built in the 12th century and played a key role during the Crusades. It sits strategically on a hill overlooking the Dead Sea and the surrounding area, providing excellent defense and control.</p>
+  <p>The architecture of Karak Castle reflects a blend of Crusader and Islamic styles, making it a unique historical site.</p>
+  
+  <h3>Important Historical Events:</h3>
+  <ol>
+    <li>1142 - Construction of Karak Castle began by the Crusaders.</li>
+    <li>1183 - The castle was besieged by Saladin.</li>
+    <li>1263 - Mamluks took control of the castle.</li>
+    <li>Ottoman period - The castle was used as a military base.</li>
+  </ol>
+  
+  <h3>Castle Features:</h3>
+  <ul>
+    <li>Massive stone walls and towers.</li>
+    <li>Underground tunnels and water cisterns.</li>
+    <li>Blend of Crusader and Islamic architectural elements.</li>
+    <li>Strategic location on a hill.</li>
+  </ul>
+
+  <img src="images/karak_castle_1.jpg" alt="Karak Castle View" />
+</section>
+<p>For more information, visit the <a href="https://en.wikipedia.org/wiki/Karak_Castle" target="_blank" rel="noopener noreferrer">Karak Castle Wikipedia page</a>.</p>
+
+  <section id="contact">
+    <h2 class="purple">Contact Us</h2>
+    <form onsubmit="handleSubmit(event)">
+      <fieldset>
+        <legend>Send a Message</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 - Created by Raneem Mobideen (3230794)</p>
+</footer>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById("name").value;
+    alert("Thank you, " + name + "! Your message has been sent.");
+  }
+</script>
+
+</body>
+</html>
